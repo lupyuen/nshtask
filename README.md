@@ -25,6 +25,10 @@ To build and run this NSH Demo App...
     aarch64-none-elf-gcc -v
     ```
 
+1.  Download QEMU Machine Emulator...
+
+    ["Download QEMU"](https://lupyuen.github.io/articles/arm#download-qemu)
+
 1.  Download NuttX...
 
     ```bash
