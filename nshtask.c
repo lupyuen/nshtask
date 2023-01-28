@@ -1,28 +1,19 @@
-// From ChatGPT, doesn't compile
+// How to create a NuttX Task for NSH Shell
+#include <stdio.h>
 #include <nuttx/sched.h>
-#include <nuttx/nsh.h>
-
-int nsh_main(int argc, char *argv[]);
-
-int nsh_task(int argc, char *argv[])
-{
-  nsh_main(argc, argv);
-  return 0;
-}
+#include "nshlib/nshlib.h"
 
 int main(int argc, char *argv[])
 {
   pid_t pid = task_create(
     "nsh",     // Task Name
     100,       // Task Priority
-    2048,      // Task Stack Size
-    nsh_task,  // Task Function
-    (FAR char * const *)argv  // Task Arguments
+    CONFIG_DEFAULT_TASK_STACKSIZE,  // Task Stack Size
+    nsh_consolemain,  // Task Function
+    NULL  // Task Arguments
   );
   if (pid < 0) {
     printf("Error creating task\n");
-  } else {
-    task_start(pid);
   }
   return 0;
 }
