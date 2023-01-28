@@ -12,7 +12,13 @@ int nsh_task(int argc, char *argv[])
 
 int main(int argc, char *argv[])
 {
-  pid_t pid = task_create("nsh", 100, 2048, nsh_task, (FAR char * const *)argv);
+  pid_t pid = task_create(
+    "nsh",     // Task Name
+    100,       // Task Priority
+    2048,      // Task Stack Size
+    nsh_task,  // Task Function
+    (FAR char * const *)argv  // Task Arguments
+  );
   if (pid < 0) {
     printf("Error creating task\n");
   } else {
