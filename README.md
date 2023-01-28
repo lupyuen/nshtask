@@ -108,7 +108,9 @@ To build and run this NSH Task Demo...
 
 > "In the entry point function for the task, call the `nsh_main()` function to start the NSH shell."
 
-> "Finally, start the task using the `task_start()` function, passing in the task's ID as a parameter. Here is a sample code"
+> "Finally, start the task using the `task_start()` function, passing in the task's ID as a parameter."
+
+> "This code creates a task named "nsh", with a priority of 100 and a stack size of 2048 bytes, that runs the nsh_main() function when started."
 
 https://github.com/lupyuen/nshtask/blob/c9d4f0b6fa60eb7cb5d0795e6670e012deefab61/nshtask.c#L2-L28
 
