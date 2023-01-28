@@ -89,4 +89,4 @@ To build and run this NSH Demo App...
     nshtask
     ```
 
-1.  Press Ctrl-C to quit QEMU
+    When we're done, press Ctrl-C to quit QEMU.
