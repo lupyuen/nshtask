@@ -90,3 +90,26 @@ To build and run this NSH Demo App...
     ```
 
     When we're done, press Ctrl-C to quit QEMU.
+
+# Incorrect Response from ChatGPT
+
+> "How to create a NuttX Task for NSH Shell"
+
+> "To create a NuttX task for the NSH shell, you will need to do the following steps:"
+
+> "In your NuttX application's main file, include the necessary headers for task creation and the NSH shell:"
+
+```c
+#include <nuttx/sched.h>
+#include <nuttx/nsh.h>
+```
+
+> "In the main function of your application, create a new task using the `task_create()` function, passing in the necessary parameters such as the task's entry point, its name, and its stack size."
+
+> "In the entry point function for the task, call the `nsh_main()` function to start the NSH shell."
+
+> "Finally, start the task using the `task_start()` function, passing in the task's ID as a parameter."
+
+> "Here is a sample code:"
+
+https://github.com/lupyuen/nshtask/blob/c9d4f0b6fa60eb7cb5d0795e6670e012deefab61/nshtask.c#L2-L28
