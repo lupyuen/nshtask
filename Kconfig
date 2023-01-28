@@ -1,0 +1,22 @@
+#
+# For a description of the syntax of this configuration file,
+# see the file kconfig-language.txt in the NuttX tools repository.
+#
+
+menuconfig EXAMPLES_NSHTASK
+	tristate "NSH Task Demo"
+	default n
+	---help---
+		Enable NSH Task Demo
+
+if EXAMPLES_NSHTASK
+
+config EXAMPLES_NSHTASK_PRIORITY
+	int "nshtask task priority"
+	default 100
+
+config EXAMPLES_NSHTASK_STACKSIZE
+	int "nshtask stack size"
+	default 16384
+
+endif # EXAMPLES_NSHTASK

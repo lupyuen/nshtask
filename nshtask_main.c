@@ -1,6 +1,6 @@
 // How to create a NuttX Task for NSH Shell
-#include <nuttx/sched.h>
 #include <stdio.h>
+#include <nuttx/sched.h>
 #include "nshlib/nshlib.h"
 
 int main(int argc, char *argv[])
