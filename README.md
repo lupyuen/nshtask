@@ -95,9 +95,9 @@ To build and run this NSH Demo App...
 
 > "How to create a NuttX Task for NSH Shell"
 
-> "To create a NuttX task for the NSH shell, you will need to do the following steps:"
+> "To create a NuttX task for the NSH shell, you will need to do the following steps"
 
-> "In your NuttX application's main file, include the necessary headers for task creation and the NSH shell:"
+> "In your NuttX application's main file, include the necessary headers for task creation and the NSH shell"
 
 ```c
 #include <nuttx/sched.h>
@@ -108,8 +108,6 @@ To build and run this NSH Demo App...
 
 > "In the entry point function for the task, call the `nsh_main()` function to start the NSH shell."
 
-> "Finally, start the task using the `task_start()` function, passing in the task's ID as a parameter."
-
-> "Here is a sample code:"
+> "Finally, start the task using the `task_start()` function, passing in the task's ID as a parameter. Here is a sample code"
 
 https://github.com/lupyuen/nshtask/blob/c9d4f0b6fa60eb7cb5d0795e6670e012deefab61/nshtask.c#L2-L28
